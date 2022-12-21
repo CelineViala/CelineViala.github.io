@@ -1,0 +1,279 @@
+
+body{
+	box-sizing:content-box;
+	margin:0;
+	font-family: 'IBM Plex Mono', monospace;
+	font-size: 15px;
+	
+
+}
+@keyframes bgSlides {
+	0% {
+		background-image: url("img/2connections.jpg");
+  }
+  45% {
+	background-image: url("img/network.jpg");
+  }
+  55% {
+	background-image: url("img/network.jpg");
+  }
+  100% {
+	background-image: url("img/2connections.jpg");
+  }
+  }
+  @keyframes colorize {
+	0%,25% { color: rgb(248, 65, 181); }
+	25%,50%{color: rgb(255, 132, 0);}
+	50%,100% { color: rgb(248, 65, 181);}
+  }
+  @keyframes colorize2 {
+	0%,25% { color: rgb(225, 255, 0); }
+	25%,50%{color: rgb(191, 0, 255);}
+	50%,100% { color: rgb(225, 255, 0);}
+  }
+
+.techno{
+	text-shadow: 2px 3px 2px rgb(0, 0, 0); 
+	font-size:larger;
+}
+.techno:nth-child(even){
+	animation: colorize 8s infinite ;
+}
+.techno:nth-child(odd){
+	animation: colorize2 8s infinite ;
+}
+nav,h2,h3{
+	text-align: center;
+	margin: 1.2em 0 0.5em 0;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+nav{
+	margin-top:0;
+}
+h2,h3{
+	text-shadow: 2px 3px 2px rgb(0, 0, 0);  
+
+}
+a{
+	text-decoration: none;
+	color:#fff;
+	background-color:#fff;
+	color:rgba(1, 5, 31, 1);
+	box-shadow: 2px 3px 2px rgb(255, 254, 254);
+	border-radius: 15px;
+	padding: 1em;
+	margin-bottom: 1em;
+}
+
+a:hover{
+	background-color:#04A7D0;
+	color:#fff;
+}
+#container{
+	max-height: 100vh;
+	height: 100vh;
+	overflow-y: scroll;
+	color: #fff;
+	position: relative;
+	width: 100%;
+	background-size: cover;
+	margin:0;
+	animation-name:bgSlides;
+	animation-iteration-count: infinite;
+	animation-duration: 30s;
+	animation-direction: alternate;
+   
+}
+
+@keyframes rotation {
+	from {
+	  transform: rotate(0deg);
+	}
+	to {
+	  transform: rotate(359deg);
+	}
+  }
+
+.return{
+	cursor: pointer;
+}
+.blocs{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap :2em;
+	flex-wrap: wrap;
+}
+.container-projects, .container-about{
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: space-around;	
+}
+h2{
+	text-align: center;
+}
+.bloc{
+   width: 30%;
+   display: block;
+   margin-left:auto;
+   margin-right: auto;
+   margin-bottom: 1em;
+   border-radius: 15px;
+  
+}
+
+.project, .item{
+	position: relative;
+	cursor: pointer;
+	width:30%;
+}
+.project__name{
+  text-align: center;
+}
+.description{
+  text-align: justify;
+
+  background-color:  rgba(1, 5, 31, 0.7);
+  padding: 1em;
+  border-radius: 15px;
+  text-shadow: 2px 3px 2px rgb(0, 0, 0);
+ 
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+
+  left:50%;
+ 
+}
+
+.bloc{
+	box-shadow: 2px 3px 2px rgb(255, 254, 254);
+	background-color: rgba(255,255,255, 0.5);
+}
+.bloc:hover{
+	animation: rotation 2s infinite linear;
+}
+.projects,.about-me{
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+  
+}
+.bloc4{
+	bottom:70%;
+	left:50%;
+}
+.brique1{
+	position:absolute;
+	bottom:10%;
+	left:20%;
+	width:10%;
+}
+nav{
+	display: flex;
+	background-color: rgba(255, 255, 255, 0.3);
+	align-items: center;
+	justify-content:flex-start;
+	min-height: 75px ;
+	gap: 1em;
+}
+.title{
+	text-align: center;
+}
+.logo{
+	width:35px;
+}
+.detail{
+	display: none;
+	flex-direction: column;
+	gap:1em;
+	justify-content: center;
+	font-size:x-large;
+	align-items: center;
+}
+.detail__img{
+	width: 15%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	border-radius: 15px;
+}
+.screenshot{
+	width: 60%;
+	box-shadow: 2px 3px 2px rgb(255, 254, 254);
+	border-radius: 15px;
+}
+.img-index{
+	width: 30%;
+}
+
+.tech-list{
+	list-style-type: none;
+	flex-wrap: wrap;
+	display: flex;
+	justify-content: center;
+	padding: 0.5em;
+	gap:2em;
+	margin-bottom:2em;
+}
+
+li{
+	border-radius: 15px;
+	background-color:  rgba(1, 5, 31, 0.7);
+	padding: 0.5em;
+	border: solid 1px #fff;
+}
+.btns{
+	margin: 2em;
+}
+
+.card{
+	display: flex;
+	gap:3em;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 2em;
+	width: 80%;
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+	body{
+		font-size: 12px;
+	}
+	.blocs{
+		flex-direction: column;
+	}
+	nav{
+		justify-content: center;
+	}
+	.container-projects, .container-about{
+		flex-direction: column;
+	}
+	.project, .item{
+		width: 100%;
+	}
+	.detail{
+		font-size: small;
+	}
+	.detail__img{
+		width:45%;
+	}
+	
+	.screenshot,.description{
+		width: 80%;  
+	}
+}  
+
+@media only screen and (min-device-width : 481px) and (max-device-width : 900px) {
+	.blocs{
+		flex-direction: column;
+	}
+	.container-projects{
+		flex-direction: row;
+	}
+	.project,.item{
+		width: 50%;
+	}	
+}  
+	

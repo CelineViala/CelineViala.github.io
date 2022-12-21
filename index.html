@@ -1,14 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@100;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
 </head>
+
 <body>
-    <h1>Bienvenue</h1>
-    <a href="https://celineviala.github.io/fractals">Fractales</a>
-    <a href="https://celineviala.github.io/hanoi">Tours de Hanoï</a>
+    <div id="container">
+        <nav>
+            <img class="logo return" src="img/molecule.png" alt="">
+            <h1 class="return title">Portfolio Céline VIALA 2022</h1>
+            <img class="logo return" src="img/molecule.png" alt="">
+
+        </nav>
+        <div class="blocs">
+            <div class="projects">
+                <h2>Mes projets en ligne</h2>
+                <div class="container-projects">
+                    <div class="project item" data-page="fractals-detail">
+                        <img src="img/fractales.png" class="bloc" alt="">
+                        <h3 class="project__name">Fractales</h3>
+
+                    </div>
+
+                    <div class="project item" data-page="hanoi-detail">
+                        <img src="img/hanoi.png" class="bloc" alt="">
+                        <h3 class="project__name">Hanoï</h3>
+
+                    </div>
+                    <div class="project item" data-page="read-detail">
+                        <img src="img/read.png" class="bloc" alt="">
+                        <h3 class="project__name">Mission-lecture</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="projects">
+                <h2 class="bloc2">Mes projets Github</h2>
+
+                <div class="container-projects">
+
+                    <div class="project item" data-page="inkable-detail">
+                        <img src="img/ink.png" class="bloc" alt="">
+                        <h3 class="project__name">Inkable</h3>
+                    </div>
+
+                    <div class="project item" data-page="diary-detail">
+                        <img src="img/diary.png" class="bloc" alt="">
+                        <h3 class="project__name">Dev' diary</h3>
+                    </div>
+                    <div class="project item" data-page="index-detail">
+                        <img src="img/books.png" class="bloc" alt="">
+                        <h3 class="project__name">Index de livre</h3>
+                    </div>
+                </div>
+            </div>
+
+            <div class="about-me">
+                <h2 class="bloc2">A propos de moi</h2>
+
+                <div class="container-about">
+
+                    <div class="item" data-page="resume-detail">
+                        <img src="img/resume.png" class="bloc" alt="">
+                        <h3>Mon parcours</h3>
+                    </div>
+
+                    <div class="item" data-page="techno-detail">
+                        <img src="img/languages.png" class="bloc" alt="">
+                        <h3>Langages et technologies</h3>
+                    </div>
+                    <div class="item" data-page="contact-detail">
+                        <img src="img/contact.png" class="bloc" alt="">
+                        <h3>Me contacter</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="fractals-detail detail">
+            <h2>Générateur de fractales</h2>
+            <img class="detail__img" src="img/fractales.png" alt="">
+            <p class="description">Quoi de plus fascinant que les fractales ? Un thème de projet idéal pour découvrir la
+                librairie P5.js qui dispose d'un grand nombre de méthodes pour dessiner sur un canvas. Il a bien sûr
+                fallu faire quelques recherches pour dénicher les formules mathématiques indispensables !</p>
+            <h3>Les technos</h3>
+            <ul class="tech-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+                <li>P5.js</li>
+            </ul>
+            <div class="btns">
+                <a href="https://mission-lecture.fr" target="_blank"> Visiter</a>
+                <a href="#" class="return">Retour</a>
+            </div>
+
+        </div>
+        <div class="hanoi-detail detail">
+            <h2>Les tours de Hanoï</h2>
+            <img class="detail__img" src="img/hanoi.png" alt="">
+            <p class="description">Le jeu des tours de Hanoï est un jeu de réflexion consistants à déplacer des disques
+                d'une tour de départ à une tour d'arrivée en un minimum de coups.</p>
+
+            <h3>Les technos</h3>
+            <ul class="tech-list">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ul>
+            <div class="btns">
+                <a href="https://mission-lecture.fr" target="_blank"> Visiter</a>
+                <a href="#" class="return">Retour</a>
+            </div>
+
+        </div>
+        <div class="read-detail detail">
+            <h2>Mission-lecture</h2>
+            <img class="detail__img" src="img/read.png" alt="">
+            <p class="description">Un site 100% autodidacte qui propose de nombreux jeux de lecture, orthographe,
+                grammaire, etc à des enfants de niveau primaire.</p>
+
+            <h3>Les technos</h3>
+            <ul class="tech-list">
+                <li>PHP</li>
+                <li>Symfony 4</li>
+                <li>MySQL</li>
+                <li>HTML/twig</li>
+                <li>Javacript</li>
+            </ul>
+            <div class="btns">
+                <a href="https://mission-lecture.fr" target="_blank"> Visiter</a>
+                <a href="#" class="return">Retour</a>
+            </div>
+
+        </div>
+
+        <div class="inkable-detail detail">
+            <h2>Inkable</h2>
+            <img class="detail__img" src="img/ink.png" alt="">
+            <p class="description">Une application réalisée de A à Z en équipe (3 personnes) dans le cadre d'un projet
+                de fin de formation à l'école O'Clock. L'objectif était de proposer une plateforme de mise en relation
+                de professionnels du tatouage et de futurs clients potentiels</p>
+            <h3>Quelques captures</h3>
+            <img class="screenshot" src="img/inkable_screenshot1.jpg" alt="">
+            <img class="screenshot" src="img/inkable_screenshot2.jpg" alt="">
+            <h3>Les technos</h3>
+            <ul class="tech-list">
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>PostgreSQL</li>
+                <li>Vue.js 3</li>
+                <li>FullCalendar</li>
+                <li>Bootstrap</li>
+            </ul>
+            <div class="btns">
+                <a href="https://mission-lecture.fr" target="_blank">Voir sur Github</a>
+                <a href="#" class="return">Retour</a>
+            </div>
+        </div>
+        <div class="diary-detail detail">
+            <h2>Dev'diary</h2>
+            <img class="detail__img" src="img/diary.png" alt="">
+            <p class="description">Quand on est développeur la veille c'est indispensable ! Voici un projet de journal
+                de veille technologique afin de garder une trace de ses recherches.</p>
+            <h3>Quelques captures</h3>
+            <img class="screenshot" src="img/diary_screenshot1.jpg" alt="">
+            <img class="screenshot" src="img/diary_screenshot2.jpg" alt="">
+            <h3>Les technos</h3>
+            <ul class="tech-list">
+                <li>Node.js</li>
+                <li>Express.js</li>
+                <li>PostgreSQL</li>
+                <li>Javascript</li>
+
+            </ul>
+            <div class="btns">
+                <a href="https://mission-lecture.fr" target="_blank">Voir sur Github</a>
+                <a href="#" class="return">Retour</a>
+            </div>
+        </div>
+        <div class="index-detail detail">
+            <h2>Générer un index de livre</h2>
+            <img class="detail__img" src="img/books.png" alt="">
+            <p class="description">Un programme qui génère un index automatiquement (dans la console et dans un fichier
+                texte) à partir d'un fichier source et de la liste des mots que l'on veut afficher dans l'index. J'ai
+                pour cela implémenté deux structures de données un ABR (Arbre Binaire de Recherche) et un AVL (arbre
+                équilibré)</p>
+            <h3>Capture</h3>
+            <img class="screenshot img-index" src="img/index.jpg" alt="">
+
+            <h3>Les technos</h3>
+            <ul class="tech-list">
+                <li>Java</li>
+            </ul>
+            <div class="btns">
+                <a href="https://mission-lecture.fr" target="_blank">Voir sur Github</a>
+                <a href="#" class="return">Retour</a>
+            </div>
+        </div>
+        <div class="resume-detail detail">
+            <h2>Mon parcours</h2>
+
+            <p class="description">J'ai découvert le développement et la programmation de manière autodidacte, il y a
+                maintenant plus de 4 ans. Cela a été une révélation ! Depuis je n'ai cessé d'apprendre, de chercher à
+                découvrir par moi-même.
+            </p>
+            <p class="description">J'ai accompagné des enfants en situation de handicap pendant plus de 10 ans. En 2021,
+                j'ai finalement obtenu une rupture conventionnelle qui m'a permis d'entamer pleinement dans ma
+                reconversion professionnelle.
+            </p>
+            <p class="description">Avant de me lancer dans ma nouvelle vie active, j'ai choisi de suivre une formation
+                dans le domaine du développement web. De mars à septembre 2022, j'ai encore beaucoup appris dans le
+                cadre d'une formation de développeur Fullstack Javacript à l'école O'Clock. J'ai decouvert tout un
+                ensemble de bonnes pratiques, de nouvelles technologies (côté backend et frontend) et j'ai développé un
+                projet au sein d'une équipe de 3 développeurs dans le respect des méthodes Agile.
+            </p>
+            <p class="description">En parallèle, je suis depuis septembre 2021, des unités d'enseignement de licence
+                informatique avec le Centre National des Arts et Métiers.</p>
+
+            <p class="description">Passionnée, autonome et persévérante, je pense posséder les qualités requises pour
+                exercer le métier de développeuse. Dans l'idéal, j'aimerais exercer en Full Remote ! </p>
+
+            <a href="#" class="return">Retour</a>
+        </div>
+        <div class="techno-detail detail">
+            <h2>Mes compétences</h2>
+            
+            <h3>Langages</h3>
+            <div class="card languages">
+                <p class="techno">HTML/CSS</p>
+                <p class="techno">Javacript</p>
+                <p class="techno">PHP</p>
+                <p class="techno">Java</p>
+                <p class="techno">Python</p>
+                <p class="techno">C++</p>
+            </div>
+            <h3>Techno Backend</h3>
+            <div class="card back">
+                <p class="techno">Node.js</p>
+                <p class="techno">Express.js</p>
+                <p class="techno">Postgres/PgAdmin</p>
+                <p class="techno">MySQL/phpMyAdmin</p>
+                <p class="techno">Symfony</p>
+            </div>
+            <h3>Techno Frontend</h3>
+            <div class="card front">
+                <p class="techno">Vue.js</p>
+                <p class="techno">Bootstrap/Materialize</p>
+            </div>
+            <div class="btns">
+                <a href="#" class="return">Retour</a>
+            </div>
+        </div>
+        
+        <div class="contact-detail detail">
+            <h2>Contact</h2>
+
+            <h3>Par mail</h3>
+            <p>celineviala.dev@gmail.com</p>
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/devcelinev/">Profil LinkedIn</a>
+            <div class="btns">
+                <a href="#" class="return">Retour</a>
+            </div>
+        </div>
+
+    </div>
 </body>
+
 </html>
