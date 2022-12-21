@@ -75,6 +75,7 @@ a:hover{
 	height: 100vh;
 	overflow-y: scroll;
 	color: #fff;
+	background-image: url("img/2connections.jpg");
 	position: relative;
 	width: 100%;
 	background-size: cover;
