@@ -4,7 +4,7 @@ body{
 	margin:0;
 	font-family: 'IBM Plex Mono', monospace;
 	font-size: 15px;
-	
+
 
 }
 @keyframes bgSlides {
@@ -48,8 +48,14 @@ nav,h2,h3{
 	padding-left: 1em;
 	padding-right: 1em;
 }
+@keyframes display{
+	0%,25%{opacity:0};
+	25%,50%{opacity:0.8};
+	100%{opacity:1};
+}
 nav{
 	margin-top:0;
+	animation: display 2s linear;
 }
 h2,h3{
 	text-shadow: 2px 3px 2px rgb(0, 0, 0);  
@@ -80,10 +86,9 @@ a:hover{
 	width: 100%;
 	background-size: cover;
 	margin:0;
-	animation-name:bgSlides;
-	animation-iteration-count: infinite;
-	animation-duration: 30s;
-	animation-direction: alternate;
+	animation:display 1s linear, bgSlides 30s infinite alternate;
+
+ 
    
 }
 
@@ -104,6 +109,7 @@ a:hover{
 	flex-direction: column;
 	justify-content: center;
 	gap :2em;
+	animation: display 3s ease-in;
 	flex-wrap: wrap;
 }
 .container-projects, .container-about{
