@@ -16,7 +16,8 @@ itemsElms.forEach((itemElm)=>{
 })
 returnLinks.forEach(returnLink=>{
 
-    returnLink.addEventListener('click',()=>{
+    returnLink.addEventListener('click',(e)=>{
+        e.preventDefault();
         console.log("test")
         blocsElm.style.display="flex";
         detailElms.forEach(elm=>{
