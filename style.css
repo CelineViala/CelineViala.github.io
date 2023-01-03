@@ -81,12 +81,12 @@ a:hover{
 	height: 100vh;
 	overflow-y: scroll;
 	color: #fff;
-	background-image: url("img/2connections.jpg");
+	background-color: rgb(4, 4, 71);
 	position: relative;
 	width: 100%;
 	background-size: cover;
 	margin:0;
-	animation:display 3s linear, bgSlides 30s infinite alternate;
+	animation:display 1s linear, bgSlides 30s infinite 0.5s alternate;
 
  
    
