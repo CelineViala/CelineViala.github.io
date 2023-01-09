@@ -35,6 +35,11 @@ body{
 .techno{
 	text-shadow: 2px 3px 2px rgb(0, 0, 0); 
 	font-size:larger;
+	padding: 0.5em;
+	background-color: rgba(255, 255, 255, 0.3);
+	box-shadow: 2px 3px 2px rgb(255, 254, 254);
+	border-radius: 15px;
+	
 }
 .techno:nth-child(even){
 	animation: colorize 8s infinite ;
